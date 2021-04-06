@@ -1,0 +1,442 @@
+.dashboard::-webkit-scrollbar {
+    width: 7px;
+}
+
+.dashboard::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: #f7f9fd;
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.dashboard {
+    font-family: 'Montserrat', sans-serif !important;
+    height: auto;
+    overflow-y: scroll;
+    .wing-contenido {
+        position: relative;
+        z-index: 1;
+        background: #f7f9fd;
+        padding-bottom: 20px;
+        .box-contenido {
+            width: 743px;
+            margin: auto;
+            padding-top: 25px;
+            min-height: 100px;
+            .txt-paginacion {
+                display: block;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 10px;
+                margin-top: 10px;
+            }
+            .pagination {
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .intro-box {
+                position: relative;
+                z-index: 1;
+                padding-top: 4px;
+                background: white;
+                box-shadow: 0px 40px 30px -20px #03098e2b;
+                h1 {
+                    font-family: 'Raleway', sans-serif;
+                    text-align: center;
+                    color: #4E2EED;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                .filtro {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-left: 12px;
+                        margin-right: 12px;
+                        width: 17px;
+                        height: 17px;
+                    }
+                    .buscador {
+                        display: flex;
+                        align-items: center;
+                        background: #1A1B34;
+                        color: white;
+                        width: 100%;
+                        padding-left: 25px;
+                        padding-right: 12px;
+                        font-family: 'Lato', sans-serif;
+                        min-height: 29px;
+                        select {
+                            border-radius: 4px;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 500;
+                            font-size: 9px;
+                            color: #728ACE;
+                            padding-left: 10px;
+                            padding-right: 20px;
+                            height: 21px;
+                            width: 180px;
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.56 3.51'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23728ace;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75px;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eselect-proyectos%3C/title%3E%3Cg id='Capa_2' data-name='Capa 2'%3E%3Cg id='Capa_1-2' data-name='Capa 1'%3E%3Cpolyline class='cls-1' points='0.38 0.38 3 3.13 5.18 0.38'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-position: right 10px center;
+                            background-size: 9px;
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                        span {
+                            font-size: 10px;
+                            font-weight: 400;
+                            margin-right: 15px;
+                        }
+                        .estado {
+                            margin-right: auto;
+                            margin-top: -5px;
+                        }
+                        .orden {
+                            margin-top: -5px;
+                        }
+                    }
+                }
+            }
+            .propuesta-enviada {
+                background: transparent !important;
+                box-shadow: none !important;
+            }
+            .no-publicado {
+                box-shadow: 0px -40px 20px 12px #DCE4F9, 0px 0px 20px 12px #DCE4F9 !important;
+                background: #DCE4F9 !important;
+                z-index: -1;
+            }
+            .proyecto-fondo {
+                padding-top: 40px;
+                background: #e3e8fd99;
+                box-shadow: 0px 0px 25px 9px #e3e8fd99;
+            }
+            .proyecto+div {
+                margin-top: 40px;
+            }
+            .proyecto {
+                border-radius: 0px 0px 10px 10px;
+                -moz-border-radius: 0px 0px 10px 10px;
+                -webkit-border-radius: 0px 0px 10px 10px;
+                border: 0px solid #000000;
+                min-height: 252px;
+                overflow: hidden;
+                background: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 50px;
+                padding-right: 50px;
+                box-shadow: 0px -20px 0px 0px white;
+                position: relative;
+                z-index: 1;
+                .txt-descripcion {
+                    width: 100% !important;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    font-size: 10px;
+                    font-weight: 300;
+                    font-family: 'Lato', sans-serif;
+                }
+                .progreso-barra {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 50px;
+                    margin-top: 77px;
+                    .estado-timeline {
+                        width: 100%;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: -70px !important;
+                    }
+                    span {
+                        margin: 0 auto;
+                        left: 0;
+                        text-align: center;
+                        right: 0;
+                        font-family: 'Lato', sans-serif;
+                        position: absolute;
+                        font-weight: 400;
+                        top: 28px;
+                        color: #1A1B34;
+                        font-size: 9px;
+                    }
+                    .selected {
+                        background: #4E2EED !important;
+                    }
+                    .span-selected {
+                        color: #4E2EED !important;
+                    }
+                    .timeline {
+                        position: relative;
+                        width: 100%;
+                        height: 12px;
+                        background: #D1D8E0;
+                        .punto {
+                            position: absolute;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19.25 19.25'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%231a1b34;%7D.cls-2%7Bfill:%23fafafa;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eno-punto%3C/title%3E%3Cg id='Capa_2' data-name='Capa 2'%3E%3Cg id='Logo_WINGMAN' data-name='Logo WINGMAN'%3E%3Cg id='Logo_WINGMAN_copy_3_Image' data-name='Logo WINGMAN copy 3 Image'%3E%3Ccircle class='cls-1' cx='9.63' cy='9.63' r='7.02'/%3E%3Cpath class='cls-2' d='M9.63,0a9.63,9.63,0,1,0,9.62,9.63A9.64,9.64,0,0,0,9.63,0Zm0,14.05a4.43,4.43,0,1,1,4.42-4.42A4.42,4.42,0,0,1,9.63,14.05Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            width: 30px;
+                            height: 30px;
+                            margin: 0 auto;
+                            left: 0;
+                            right: 0;
+                            bottom: -7px;
+                        }
+                        .selected-punto {
+                            position: absolute;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19.23 19.23'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%234e2eed;%7D.cls-2%7Bfill:%23fafafa;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eetapa%3C/title%3E%3Cg id='Capa_2' data-name='Capa 2'%3E%3Cg id='Capa_1-2' data-name='Capa 1'%3E%3Ccircle class='cls-1' cx='9.61' cy='9.61' r='7.02'/%3E%3Cpath class='cls-2' d='M9.61,0a9.62,9.62,0,1,0,9.62,9.61A9.62,9.62,0,0,0,9.61,0Zm0,14A4.42,4.42,0,1,1,14,9.61,4.41,4.41,0,0,1,9.61,14Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            width: 30px;
+                            height: 30px;
+                            margin: 0 auto;
+                            left: 0;
+                            right: 0;
+                            bottom: -7px;
+                        }
+                        .divisor {
+                            position: absolute;
+                            width: 19px;
+                            z-index: 1;
+                            height: 19px;
+                            right: -5px;
+                            bottom: -4px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10.98 40.76'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Edivisor-proyecto%3C/title%3E%3Cg id='Capa_2' data-name='Capa 2'%3E%3Cg id='Capa_1-2' data-name='Capa 1'%3E%3Cpolygon class='cls-1' points='2.9 40.76 0 39.61 7.62 20.38 0 1.15 2.9 0 10.98 20.38 2.9 40.76'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-size: 15px;
+                            background-position: center;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-bottom: 70px;
+                    }
+                }
+                .info-proyecto {
+                    position: relative;
+                    margin-bottom: 35px;
+                    .botones {
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        .chat {
+                            width: 19px !important;
+                        }
+                        button {
+                            background: none;
+                            border: none;
+                            padding: 0;
+                            margin-left: 9px;
+                            img {
+                                width: 19px;
+                                height: 100%;
+                            }
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    .datos {
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Lato', sans-serif;
+                        div {
+                            cursor: pointer;
+                        }
+                        h1 {
+                            color: #00DEFF;
+                            font-weight: 700;
+                            font-size: 18px;
+                            white-space: nowrap;
+                            max-width: 200px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            margin-bottom: 0px;
+                        }
+                        p {
+                            margin-bottom: 0px !important;
+                            color: #728ACE;
+                            font-weight: 700;
+                            font-size: 12px;
+                        }
+                        span {
+                            color: #00DEFF;
+                            margin-left: 3px;
+                            margin-right: 3px;
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 700;
+                            font-size: 19pt;
+                        }
+                        .estado {
+                            font-family: 'Raleway', sans-serif;
+                            margin-left: 7px;
+                            background: #4e2eed;
+                            color: white;
+                            font-size: 9px;
+                            font-weight: 700;
+                            max-width: 220px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            text-align: center;
+                            border-radius: 4px;
+                            padding-bottom: 3px;
+                            padding-top: 3px;
+                            font-weight: 600;
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.no-find {
+    background: white;
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .box-video {
+        background: #1A1B34;
+        padding-left: 53px;
+        padding-right: 53px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        min-height: 250px;
+        .video {
+            background: white;
+            width: 100%;
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+            .icono {
+                cursor: pointer;
+                z-index: 2;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48.04 48.04'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D.cls-2%7Bfill:%234e2eed;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eplay_1%3C/title%3E%3Cg id='Capa_2' data-name='Capa 2'%3E%3Cg id='Capa_1-2' data-name='Capa 1'%3E%3Crect class='cls-1' x='10.66' y='10.1' width='28.83' height='26.38'/%3E%3Cpath class='cls-2' d='M24,0A24,24,0,1,0,48,24,24,24,0,0,0,24,0Zm8.3,25.29-12,7.51a1.51,1.51,0,0,1-.79.23,1.47,1.47,0,0,1-.73-.19A1.49,1.49,0,0,1,18,31.53v-15a1.5,1.5,0,0,1,2.29-1.27l12,7.51a1.49,1.49,0,0,1,0,2.54Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            video {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .botones {
+        right: 0px !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .dashboard {
+        overflow: initial;
+    }
+    .box-contenido {
+        width: 100% !important;
+    }
+    .proyecto {
+        .progreso-barra {
+            flex-direction: column;
+            margin-bottom: 0px !important;
+            .timeline {
+                margin-bottom: 100px !important;
+                .divisor {
+                    display: none;
+                }
+            }
+        }
+    }
+    .datos {
+        flex-direction: column;
+        h1 {
+            max-width: 100% !important;
+        }
+        span {
+            display: none;
+        }
+        .estado {
+            margin-top: 10px;
+        }
+    }
+    .botones {
+        justify-content: center;
+        margin-top: 20px;
+        position: relative !important;
+    }
+    .buscador {
+        padding-top: 3px;
+        display: block !important;
+        padding-bottom: 8px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        select {
+            width: 100% !important;
+        }
+    }
+}
+
+
+/* Paginacion */
+
+ngb-pagination ::ng-deep ul>li:not(.active)>a {
+    background-color: #4E2EED !important;
+    color: white;
+}
+
+ngb-pagination ::ng-deep ul>li.active>a {
+    background-color: #2c159c !important;
+    color: white;
+}
+
+ngb-pagination ::ng-deep ul>li>a {
+    color: white !important;
+}
+
+ngb-pagination ::ng-deep ul>li>a {
+    color: white !important;
+}
+
+ngb-pagination ::ng-deep .page-item.active .page-link {
+    border-color: #775ef1;
+}
+
+@media (max-height: 882px) {
+    .dashboard {
+        height: 600px;
+    }
+}

@@ -1,0 +1,65 @@
+<div class="header">
+    <div class="wing-dashboard">
+        <div class="container">
+            <div class="wing-container">
+                <div class="menu">
+                    <a routerLinkActive="selected">Inicio</a>
+                    <ul>
+                        <li routerLink="/buscar-proveedor" routerLinkActive="selected">Buscar proveedor</li>
+                        <li routerLinkActive="selected">Transacciones</li>
+                        <li><button class="btn btn-proyecto">Pública un<span>Proyecto</span></button></li>
+                    </ul>
+                </div>
+                <div class="box-perfil">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="info-inicio">
+                                <div class="frase">
+                                    <div class="txt-imagen">
+                                        <p>Empieza y</p>
+                                        <img src="/assets/images/mini-logo.svg">
+                                    </div>
+                                    <h1>Publica tú</h1>
+                                    <p>proyecto</p>
+                                </div>
+                                <p>Al utilizar categorías orientas mejor tú búsqueda de profesionales</p>
+                                <button class="btn btn-proyecto">Pública un<span>Proyecto</span></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="datos-perfil">
+                                <div class="progreso">
+                                    <div class="cambiar-icono">
+                                        <div class="icono"></div>
+                                        <input type="file" class="uploadlogo" hidden type="file" name="foto1_name" required aria-describedby="inputGroupFileAddon01">
+                                    </div>
+                                    <div class="usuario" style="background-image:url('/assets/images/usuario-rojo.svg');background-size: 230px;"></div>
+                                    <circle-progress [percent]="100" [radius]="45" [outerStrokeWidth]="10" [outerStrokeColor]="'#FF196E'" [outerStrokeGradientStopColor]="'#961496'" [animation]="true" [animationDuration]="300"></circle-progress>
+                                </div>
+                            </div>
+                            <div class="perfil">
+                                <h2>Juan Garcia</h2>
+                                <p>Miembro desde: <span>10/10/2020</span></p>
+                                <button class="btn" data-toggle="modal" data-target="#perfil">Ver mi perfil</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="resultados">
+                                <h3>Proyectos</h3>
+                                <h2>0</h2>
+                                <h3>Aplicaciones</h3>
+                                <h2>0</h2>
+                                <div class="pro-edicion">
+                                    <h3>Ocupas públicar más proyectos?</h3>
+                                    <button class="btn btn-pro"><span class="txt-convertir">Convertirme <br><strong>en</strong></span><span class="txt-pro">PRO</span></button>
+                                    <h3>Realiza cambios en tu cuenta</h3>
+                                    <button class="btn btn-basica">Editar mi información básica</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
